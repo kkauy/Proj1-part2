@@ -1,0 +1,167 @@
+:root {
+  --blue-color: rgb(7, 140, 180);
+  --border-black: 1px solid black;
+  --blog-padding: 0.4rem 1rem;
+  --bold-text: bold;
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.blog-header {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribe_link {
+  color: gray;
+  font-weight: var(--bold-text);
+}
+
+a {
+  color: var(--blue-color);
+  cursor: pointer;
+}
+
+.blog-header > h1 {
+  text-decoration: underline;
+}
+
+img {
+  width: 15px;
+  height: 15px;
+}
+
+/* Section */
+section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 20px;
+  width:60%;
+}
+
+.blog-container > h1 {
+  font-size: 35px;
+}
+
+.blog-container_date {
+  color: gray;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#blog-container_frame {
+  padding-bottom: 5px;
+  border: var(--border-black);
+}
+
+#blog-container_black {
+  font-weight: var(--bold-text);
+}
+
+ul {
+  margin-left: 30px;
+}
+
+ol {
+  margin-left: 30px;
+}
+
+button {
+  margin: 1.5 rem 0;
+  padding: 0.4rem;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 1.5 rem;
+  cursor: pointer;
+}
+
+button:hover {
+  color: var(--blue-color);
+}
+
+.button_older {
+  border: 1px solid var(--blue-color);
+  color: var(--blue-color);
+  background-color: white;
+}
+
+.button_newer {
+  border: 1px solid gray;
+  color: gray;
+  background-color: white;
+}
+
+/* Aside */
+.aside-wrapper {
+  margin: 20px;
+  margin-bottom: 30px;
+  gap: 15px;
+  grid-column: 4 / span 1;
+  grid-row: 1;
+  width:40%;
+}
+
+.aside-wrapper h3 {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.about_aside {
+  padding-top: 5px;
+  background-color: #f0f0f1;
+  margin-right: 50px;
+}
+
+.archieve_aside li {
+  padding: 10px;
+}
+
+.archives_aside {
+  margin: 1rem 0;
+}
+
+.media_links {
+  list-style: none;
+  margin-top: 5px;
+  margin-left: 0;
+  text-decoration: underline;
+  color: var(--blue-color);
+}
+
+footer {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: var(--blog-padding);
+  padding-bottom: 5px;
+  background-color: #f0f0f0;
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Responsive design for width */
+@media (min-Width: 1000px){
+    main{
+        width:90%;
+    }
+
+    section{
+        gap:10px;
+    }
+}
