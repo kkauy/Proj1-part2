@@ -109,7 +109,7 @@ button:hover {
 
 /* Aside */
 .aside-wrapper {
-  margin: 20px;
+  margin: 50px;  
   margin-bottom: 30px;
   gap: 15px;
   grid-column: 4 / span 1;
